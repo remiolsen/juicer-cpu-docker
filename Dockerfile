@@ -1,7 +1,7 @@
 FROM conda/miniconda3:latest
 
 LABEL author="Remi-Andre Olsen" \
-      maintainer="remi-andre.olsen@scilifelab.se"
+      maintainer="remi-andre.olsen@scilifelab.se" \
       homepage="https://github.com/remiolsen/juicer-cpu-docker"
 
 RUN apt-get update && \
