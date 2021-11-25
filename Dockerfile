@@ -2,7 +2,9 @@ FROM conda/miniconda3:latest
 
 LABEL author="Remi-Andre Olsen" \
       maintainer="remi-andre.olsen@scilifelab.se" \
-      homepage="https://github.com/remiolsen/juicer-cpu-docker"
+      homepage="https://github.com/remiolsen/juicer-cpu-docker" \
+      juicer-version="1.6" \
+      juicer-commit="2afef51"
 
 RUN apt-get update && \
     apt-get install -y git openjdk-8-jdk coreutils gawk wget && \
